@@ -1,0 +1,18 @@
+server:
+  port: 8888
+  error:
+    include-message: always
+
+spring:
+  jpa:
+    database: POSTGRESQL
+    show-sql: true
+    hibernate:
+      ddl-auto: create-drop
+  datasource:
+    platform: postgres
+    url: jdbc:postgresql://localhost:5432/registration
+    username: postgres
+    password: password
+    driverClassName: org.postgresql.Driver
+
